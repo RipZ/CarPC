@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SettingsLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_marginRight="32dp"
+                android:text="Volume"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <SeekBar
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/VolumeSeekBar" android:layout_column="1" android:indeterminate="false"
+                    android:layout_marginRight="32dp" android:layout_gravity="center_vertical"
+                    android:textColor="#FFFFFF"                    />
+
+            <TextView
+                android:id="@+id/SettingsVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Balance"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <SeekBar
+                android:id="@+id/BalanceSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/SettingsBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Fad"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <SeekBar
+                android:id="@+id/FadSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp" />
+
+            <TextView
+                android:id="@+id/SettingsFad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Bass"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <SeekBar
+                android:id="@+id/BassSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp" />
+
+            <TextView
+                android:id="@+id/SettingsBass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="14"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="16dp" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="Treble"
+                android:textColor="#FFFFFF"
+                android:textSize="34sp" />
+
+            <SeekBar
+                android:id="@+id/TrebleSeekBar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp" />
+
+            <TextView
+                android:id="@+id/SettingsTreble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="32dp"
+                android:text="15"
+                android:textColor="#FFFFFF"
+                android:textSize="28dp" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        android:textSize="24sp" />
+
+</LinearLayout>

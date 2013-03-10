@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    android:clickable="false"
+    android:longClickable="false"
+    android:orientation="horizontal"
+    android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+
+    <LinearLayout
+        android:layout_width="840dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="360dp" >
+
+                <ImageView
+                    android:id="@+id/album_art"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="@string/AlbumArtImage" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/ArtistImage" >
+
+                        <ImageView
+                            android:id="@+id/TitleImage"
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="8dp"
+                            android:contentDescription="@string/TitleImage"
+                            android:src="@drawable/ic_mp_song_playback" />
+
+                        <TextView
+                            android:id="@+id/Title"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/SongTitle"
+                            android:text="Title"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="34sp"
+                            android:textStyle="bold"
+                            android:typeface="normal" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/ArtistImage"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="14dp"
+                            android:contentDescription="@string/ArtistImage"
+                            android:src="@drawable/ic_mp_artist_playback" />
+
+                        <TextView
+                            android:id="@+id/Artist"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Artist"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="28sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" >
+
+                        <ImageView
+                            android:id="@+id/AlbumImage"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="14dp"
+                            android:contentDescription="@string/AlbumImage"
+                            android:src="@drawable/ic_mp_album_playback" />
+
+                        <TextView
+                            android:id="@+id/Album"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Album"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textSize="28sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/FM_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/FM_freq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:textSize="82sp"
+                    android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/FM_name"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="bottom|center_horizontal"
+               android:layout_marginLeft="24dp"
+               android:clickable="false"
+               android:textAppearance="?android:attr/textAppearanceLarge"
+               android:textSize="48sp"
+               android:textStyle="bold" />
+                
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:gravity="center_horizontal" >
+
+                <ImageButton
+                    android:id="@+id/buttonRewind"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_previous" />
+
+                <ImageButton
+                    android:id="@+id/buttonRewindSeek"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_rewind" />
+
+                <ImageButton
+                    android:id="@+id/buttonPlayPause"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_play" />
+
+                <ImageButton
+                    android:id="@+id/buttonForwardSeek"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_forward" />
+
+                <ImageButton
+                    android:id="@+id/buttonForward"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_next" />
+
+                <ImageButton
+                    android:id="@+id/buttonSettings"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/hardware_icons_toolbar_info" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="fill_parent"
+        android:background="#FF808080" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Speed"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/Speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="72sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="RPM"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/RPM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Cooler temp"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/COOLER_TEMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:text="Outdoor temp"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/OUTDOOR_TEMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="52sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        
+        </LinearLayout>
+
+</LinearLayout>

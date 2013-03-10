@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CarPC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="start">Start service</string>
+	<string name="stop">Stop service</string>
+	<string name="ArtistImage"></string>
+	<string name="TitleImage"></string>
+	<string name="AlbumImage"></string>
+	<string name="AlbumArtImage"></string>
+	<string name="SongTitle"></string>
+</resources>
